@@ -1,0 +1,108 @@
+_type: export
+__export_format: 4
+__export_date: 2022-07-18T08:45:58.220Z
+__export_source: insomnia.desktop.app:v2022.4.2
+resources:
+  - _id: req_d3914d0d7c144785b1b4f5ac5375bb6d
+    parentId: fld_db0d2be275aa4fe1b3c8b40127db8b6a
+    modified: 1658133919202
+    created: 1658133511435
+    url: "{{part}}/register"
+    name: register
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "cuong",
+        	"phone_number": "0337056362",
+        	"email": "nguyenduccuong1682001@gmail.com",
+        	"password": "1682001"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_4dce389ad1124e17bd048c6c875c23fb
+    authentication: {}
+    metaSortKey: -1658133291650
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_db0d2be275aa4fe1b3c8b40127db8b6a
+    parentId: fld_ae00ad3ad68a434ab6d9d4ef027eb3f1
+    modified: 1658133519545
+    created: 1658133511432
+    name: Login/Register
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1000000000
+    _type: request_group
+  - _id: fld_ae00ad3ad68a434ab6d9d4ef027eb3f1
+    parentId: wrk_fd951cabeca544bf88d92cff4fc43634
+    modified: 1658133439299
+    created: 1658133391145
+    name: BeMall
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1658133366271.25
+    _type: request_group
+  - _id: wrk_fd951cabeca544bf88d92cff4fc43634
+    parentId: null
+    modified: 1658133216250
+    created: 1658133216250
+    name: BeMall_git
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: env_68ecf6491214b5279944a073c426956e44eb6221
+    parentId: wrk_fd951cabeca544bf88d92cff4fc43634
+    modified: 1658133313085
+    created: 1658133216259
+    name: Base Environment
+    data:
+      part: https://dev.bemall.vn/api
+    dataPropertyOrder:
+      "&":
+        - part
+    color: null
+    isPrivate: false
+    metaSortKey: 1658133216259
+    _type: environment
+  - _id: jar_68ecf6491214b5279944a073c426956e44eb6221
+    parentId: wrk_fd951cabeca544bf88d92cff4fc43634
+    modified: 1658133216260
+    created: 1658133216260
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_10c91fd9f9f4436f985210dad9c5bd93
+    parentId: wrk_fd951cabeca544bf88d92cff4fc43634
+    modified: 1658133216254
+    created: 1658133216254
+    fileName: BeMall_git
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_cfde1c4650784e7188aa02760bd8491d
+    parentId: env_68ecf6491214b5279944a073c426956e44eb6221
+    modified: 1658133315115
+    created: 1658133253518
+    name: BeMall_git
+    data:
+      part: https://dev.bemall.vn/api
+    dataPropertyOrder:
+      "&":
+        - part
+    color: null
+    isPrivate: false
+    metaSortKey: 1658133253518
+    _type: environment
